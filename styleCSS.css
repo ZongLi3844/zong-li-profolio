@@ -1,75 +1,86 @@
 .container0 {
-    /* 先預設 防止爆版 */
-    padding: 0;
-    margin: 0;
-    color: antiquewhite;
-    background-color: black;
-    padding-top: 7vh;
+  /* 先預設 防止爆版 */
+  padding: 0;
+  margin: 0;
+  color: antiquewhite;
+  background-color: black;
+  padding-top: 7vh;
 }
 .font0 {
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 .LOGO {
-    font-size: 6vh;
-    padding: 0.5vh 0 1.5vh 2vh;
-    cursor: pointer;
-    margin-right: 15vh;
-    /* 順序上右下左 */
+  font-size: 6vh;
+  padding: 0.5vh 0 1.5vh 2vh;
+  cursor: pointer;
+  margin-right: 15vh;
+  /* 順序上右下左 */
+  color: white;
+  a {
+    text-decoration: none;
     color: white;
-    a {
-        text-decoration: none;
-        color: white;
-    }
+  }
 }
 .navbar0 {
-    font-size: 1vh;
-    cursor: pointer;
-    /* 順序上右下左 */
-    margin: 1.5vh 10vh 0 0;
-    padding: 1vh 0 0 0;
-    display: flex;
-    flex-direction: row;
+  font-size: 1vh;
+  cursor: pointer;
+  /* 順序上右下左 */
+  margin: 1.5vh 10vh 0 0;
+  padding: 1vh 0 0 0;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  a {
+    text-decoration: none;
     color: white;
-    a {
-        text-decoration: none;
-        color: white;
-    }
+  }
 }
 .btn0 {
-    /* border-radius: 999px; */
-    /* background-color: burlywood; */
-    /* border: 1vh solid #fff; */
-    /* 順序上右下左 */
-    padding: 0 10vh 0 0;
-    font-size: 4vh;
-    color: white;
-    cursor: pointer;
+  /* border-radius: 999px; */
+  /* background-color: burlywood; */
+  /* border: 1vh solid #fff; */
+  /* 順序上右下左 */
+  padding: 0 10vh 0 0;
+  font-size: 4vh;
+  color: white;
+  cursor: pointer;
 }
 .article0 {
-    margin: 6vh;
-    padding: 3vh;
-    border-radius: 3vh;
-    background-color: gray;
+  margin: 6vh;
+  padding: 3vh;
+  border-radius: 3vh;
+  background-color: gray;
 }
 .footer0 {
-    font-size: 3vh;
-    height: 10vh;
-    background-color: gray;
+  font-size: 3vh;
+  height: 10vh;
+  background-color: gray;
 }
 .img0 {
-    margin: 3vh;
+  margin: 3vh;
 }
 .txt0 {
-    margin-top: 3vh;
+  margin-top: 3vh;
 }
 .imgBN {
-    height: 90vh;
-    object-fit: cover;
+  height: 90vh;
+  object-fit: cover;
 }
 .album {
 }
+
+.figure {
+  display: inline-flex;
+
+  width: 20vw;
+  height: 20vh;
+  margin: 1vw !important;
+  overflow: hidden;
+}
 .pic0 {
-    height: 20vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
