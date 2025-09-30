@@ -1,137 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>/mswavatar</title>
-        <!-- 套用bootstrap5 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="styleCSS.css" />
-        <style>
-            .flex {
-                display: flex;
-                flex-direction: row;
-            }
-            .img2 {
-                height: 90vh;
-                object-fit: cover;
-            }
-        </style>
-    </head>
-    <body class="container0 font0">
-        <header class="flex fixed-top" style="background-color: black">
-            <!-- body中不能head -->
-            <div class="LOGO">ZongLi Portfolio</div>
-            <nav>
-                <ul class="navbar0" style="list-style-type: none">
-                    <li class="btn0">
-                        <a href="/About.html">About</a>
-                    </li>
-                    <li class="btn0">
-                        <a href="/MattePainting.html">MattePainting</a>
-                    </li>
-                    <li class="btn0">
-                        <a href="/ConceptArt.html">ConceptArt</a>
-                    </li>
-                    <li class="btn0">
-                        <a href="https://www.artstation.com/zongli"
-                            >Portfolio</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <!-- <h1 style="text-align: center">Banner</h1> -->
-        <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
-        >
-            <div class="carousel-indicators">
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                ></button>
-                <button
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                ></button>
-            </div>
-            <div class="carousel-inner d-block mx-auto imgBN">
-                <div class="carousel-item active">
-                    <img
-                        src="/ZongLi Portfolio/3mattePainting/WK5-09-李宗儒(最终).jpg"
-                        class="d-block w-100"
-                        alt="..."
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="/ZongLi Portfolio/3mattePainting/tumbnail.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                    />
-                </div>
-                <div class="carousel-item">
-                    <img
-                        src="/ZongLi Portfolio/3mattePainting/Sci-fi city night.jpg"
-                        class="d-block w-100"
-                        alt="..."
-                    />
-                </div>
-            </div>
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-            >
-                <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-            >
-                <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>/mswavatar</title>
+    <!-- 套用bootstrap5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styleCSS.css" />
+    <style>
+      .flex {
+        display: flex;
+        flex-direction: row;
+      }
+      .img2 {
+        height: 90vh;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body class="container0 font0">
+    <header id="header"></header>
+    <!-- <h1 style="text-align: center">Banner</h1> -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner d-block mx-auto imgBN">
+        <div class="carousel-item active">
+          <img
+            src="/ZongLi Portfolio/3mattePainting/WK5-09-李宗儒(最终).jpg"
+            class="d-block w-100"
+            alt="..."
+          />
         </div>
-        <article class="article0"></article>
-        <aside>
-            <section></section>
-        </aside>
-        <footer class="footer0">
-            <div>
-                <p style="line-height: 10vh; text-align: center">
-                    版權所有 2025 | ZongLi
-                </p>
-                <!-- <ul class="link1">
+        <div class="carousel-item">
+          <img
+            src="/ZongLi Portfolio/3mattePainting/tumbnail.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/ZongLi Portfolio/3mattePainting/Sci-fi city night.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <article class="article0"></article>
+    <aside>
+      <section></section>
+    </aside>
+    <footer class="footer0">
+      <div>
+        <p style="line-height: 10vh; text-align: center">
+          版權所有 2025 | ZongLi
+        </p>
+        <!-- <ul class="link1">
                     <li>
                         <img src="" alt="" />FB icon &nbsp;<span></span>
                         <a href="https://www.facebook.com/">SHA人網路美術行銷</a
@@ -146,9 +119,17 @@
                         ><a href="tel:+886-9-12345678">0912-345-678</a>
                     </li>
                 </ul> -->
-            </div>
-        </footer>
-        <!-- Bootstrap JS (含 Popper.js) -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+      </div>
+    </footer>
+    <!-- Bootstrap JS (含 Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      fetch("./component/header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
+  </body>
 </html>
