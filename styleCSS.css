@@ -25,7 +25,7 @@
 }
 .navbar0 {
     font-size: 1vh;
-    cursor: pointer;
+
     /* 順序上右下左 */
     margin: 1.5vh 10vh 0 0;
     padding: 1vh 0 0 0;
@@ -68,8 +68,8 @@
     height: 90vh;
     object-fit: cover;
 }
-.album {
-}
 .pic0 {
     height: 20vh;
+    margin: 0 2vh 2vh 0;
+    border-radius: 5%;
 }
