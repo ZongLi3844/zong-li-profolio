@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BMI計算器</title>
+        <style>
+            .box {
+                width: 300px;
+                height: 300px;
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="group">
+                <label for="">Height(m)</label>
+                <input id="h" type="number" />
+            </div>
+            <div class="group">
+                <label for="">Weight(kg)</label>
+                <input id="w" type="number" />
+            </div>
+
+            <button onclick="C()">Calc</button>
+            <h2>
+                <span>BMI:</span>
+                <span id="result"></span>
+            </h2>
+        </div>
+
+        <script>
+            // function C() {
+            //     // 取得這個檔案下，id為"w"的目標
+            //     let w = document.getElementById("w");
+            //     let h = document.getElementById("h");
+            //     // 取得w這個元素下的value(意指輸入的數字)
+            //     let weight = w.value;
+            //     let height = h.value;
+            //     let target = document.getElementById("result");
+            //     // 讓target套用(w/h*h)轉成四捨五入的數字
+            //     // 將四捨五入後的結果，給回target的內文
+            //     target.innerText = (weight / (height * height)).toFixed(0);
+            // }
+            function C() {
+                let w = document.getElementById("w");
+                let h = document.getElementById("h");
+                let weight = w.value;
+                let height = h.value;
+                let result = (weight / (height * height)).toFixed(0);
+                let target = document.getElementById("result");
+
+                target.innerText = result;
+
+                // 超過31或低於17
+                if (result >= 31 || result <= 17) {
+                    target.style.color = "red";
+                    target.innerText = result + "/免役";
+                }
+            }
+        </script>
+    </body>
+</html>
