@@ -13,6 +13,7 @@
 }
 .LOGO {
     font-size: 6vh;
+    padding: 0.5vh 0 1.5vh 2vh;
     cursor: pointer;
     margin-right: 15vh;
     /* 順序上右下左 */
@@ -26,7 +27,8 @@
     font-size: 1vh;
     cursor: pointer;
     /* 順序上右下左 */
-    margin: 0.5vh 10vh 0 0;
+    margin: 1.5vh 10vh 0 0;
+    padding: 1vh 0 0 0;
     display: flex;
     flex-direction: row;
     color: white;
@@ -41,7 +43,7 @@
     /* border: 1vh solid #fff; */
     /* 順序上右下左 */
     padding: 0 10vh 0 0;
-    font-size: 5vh;
+    font-size: 4vh;
     color: white;
     cursor: pointer;
 }
@@ -66,6 +68,8 @@
     height: 90vh;
     object-fit: cover;
 }
+.album {
+}
 .pic0 {
-    height: 10vh;
+    height: 20vh;
 }
