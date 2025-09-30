@@ -66,10 +66,10 @@
 }
 .album {
 }
-
+/* imgm用figure包住 */
 .figure {
     display: inline-flex;
-
+    /* 圖片堆疊 */
     width: 20vw;
     height: 20vh;
     margin: 1vw !important;
