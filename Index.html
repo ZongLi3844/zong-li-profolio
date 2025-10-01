@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>/mswavatar</title>
-    <!-- 套用bootstrap5 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styleCSS.css" />
-    <style></style>
-  </head>
-  <body class="container0 font0">
-    <header id="header"></header>
-    <div>
-      <!-- <h1 style="text-align: center">Banner</h1> -->
-      <div>
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          style="
-            width: 100%;
-            height: 100vh; /* 高度滿版 (一個螢幕高度)，你也可以改 400px */
-            overflow: hidden;
-          "
-          src="/ZongLi Portfolio/video/WK3-09-李宗儒.mp4"
-        ></video>
-      </div>
-    </div>
-    <article class="article0"></article>
-    <aside>
-      <section></section>
-    </aside>
-    <footer class="footer0">
-      <div>
-        <p style="line-height: 10vh; text-align: center">
-          版權所有 2025 | ZongLi
-        </p>
-        <!-- <ul class="link1">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Index</title>
+        <!-- 套用bootstrap5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styleCSS.css" />
+        <style></style>
+    </head>
+    <body class="container0 font0">
+        <header id="header"></header>
+        <div>
+            <div>
+                <video
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    style="
+                        width: 100%;
+                        height: 100vh; /* 高度滿版 (一個螢幕高度)，你也可以改 400px */
+                        overflow: hidden;
+                    "
+                    src="/ZongLi Portfolio/video/WK3-09-李宗儒.mp4"
+                ></video>
+            </div>
+        </div>
+        <article class="article0">
+            分類區
+            <figure><img src="" alt="" /><a href="">Art</a></figure>
+            <figure><img src="" alt="" /><a href="">Painting</a></figure>
+            <div>video</div>
+        </article>
+        <aside>
+            <section></section>
+        </aside>
+        <footer class="footer0">
+            <div>
+                <p style="line-height: 10vh; text-align: center">
+                    版權所有 2025 | ZongLi
+                </p>
+                <!-- <ul class="link1">
                     <li>
                         <img src="" alt="" />FB icon &nbsp;<span></span>
                         <a href="https://www.facebook.com/">SHA人網路美術行銷</a
@@ -57,18 +61,18 @@
                         ><a href="tel:+886-9-12345678">0912-345-678</a>
                     </li>
                 </ul> -->
-      </div>
-    </footer>
-    <!-- Bootstrap JS (含 Popper.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            </div>
+        </footer>
+        <!-- Bootstrap JS (含 Popper.js) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      // import共同的部份給所有介面
-      fetch("./component/header.html")
-        .then((res) => res.text())
-        .then((html) => {
-          document.getElementById("header").innerHTML = html;
-        });
-    </script>
-  </body>
+        <script>
+            // import共同的部份給所有介面
+            fetch("./component/header.html")
+                .then((res) => res.text())
+                .then((html) => {
+                    document.getElementById("header").innerHTML = html;
+                });
+        </script>
+    </body>
 </html>

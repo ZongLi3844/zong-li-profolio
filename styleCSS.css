@@ -13,7 +13,6 @@
 }
 .LOGO {
     font-size: 3vw;
-    width: vw;
     padding: 0.5vw 0 1vw 2vw;
     cursor: pointer;
     margin-right: 15vw;
@@ -27,8 +26,8 @@
 .navbar0 {
     font-size: 1vh;
     /* 順序上右下左 */
-    margin: 1.5vh 10vh 0 0;
-    padding: 1vh 0 0 0;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     color: white;
@@ -37,12 +36,23 @@
         color: white;
     }
 }
+.topNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .btn0 {
     /* border-radius: 999px; */
     /* background-color: burlywood; */
     /* border: 1vh solid #fff; */
     /* 順序上右下左 */
-    padding: 0 10vh 0 0;
+    padding: 0 3vw 0 0;
     font-size: 4vh;
     color: white;
     cursor: pointer;
@@ -51,33 +61,40 @@
     margin: 2vw;
     padding: 1vw;
     border-radius: 1vw;
-    background-color: gray;
+    background-color: rgb(50, 50, 50);
 }
 .footer0 {
     font-size: 3vh;
     height: 10vh;
-    background-color: gray;
+    background-color: rgb(50, 50, 50);
 }
 .txt0 {
-    margin-top: 3vh;
+    margin: 3vh 0 2vh 1vw;
 }
 .imgBN {
     height: 90vh;
     object-fit: cover;
-}
-.album {
 }
 /* imgm用figure包住 */
 .figure {
     display: inline-flex;
     /* 圖片堆疊 */
     width: 20vw;
-    height: 20vh;
+    height: 25vh;
     margin: 1vw !important;
     overflow: hidden;
 }
 .pic0 {
+    border-radius: 2%;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
+}
+img {
+    transform: scale(1, 1);
+    transition: all 1s ease-out;
+}
+img:hover {
+    transform: scale(1.2, 1.2);
 }
