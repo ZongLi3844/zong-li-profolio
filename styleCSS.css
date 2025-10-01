@@ -69,7 +69,9 @@
     background-color: rgb(50, 50, 50);
 }
 .txt0 {
-    margin: 3vh 0 2vh 1vw;
+    display: inline-block;
+    margin-right: 6vw; /* 控制間距 */
+    padding: 0 1vw 0 1vw;
 }
 .imgBN {
     height: 90vh;
